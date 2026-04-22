@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Test</title>
     <style>
-      ul {
+      .container {
         display: flex;
       }
+      .content {
+        flex-basis: 920px;
+        background-color: peru;
+        flex-grow: 1;
+      }
+      .sidebar {
+        flex-basis: 300px;
+        background-color: yellow;
+      }
     </style>
+    <title>Test</title>
   </head>
   <body>
-    <ul>
-      <li>box1</li>
-      <li>box2</li>
-      <li>box3</li>
-      <li>box4</li>
-      <li>box5</li>
-    </ul>
+    <div class="container">
+      <main class="content">메인</main>
+      <aside class="sidebar">우측</aside>
+    </div>
   </body>
 </html>
